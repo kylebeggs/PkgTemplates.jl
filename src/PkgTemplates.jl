@@ -30,7 +30,7 @@ export
     Develop,
     Documenter,
     DroneCI,
-    DowngradeCI,
+    DowngradeDependencyTests,
     Formatter,
     Git,
     GitHubActions,

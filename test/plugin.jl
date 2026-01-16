@@ -59,7 +59,7 @@ PT.user_view(::FileTest, ::Template, ::AbstractString) = Dict("X" => 1, "Z" => 3
         t = tpl()
         p = TravisCI(; file="/does/not/exist")
         @test_throws ArgumentError PT.validate(p, t)
-        p = DowngradeCI(; file="/does/not/exist")
+        p = DowngradeDependencyTests(; file="/does/not/exist")
         @test_throws ArgumentError PT.validate(p, t)
         p = Documenter(; assets=["/does/not/exist"])
         @test_throws ArgumentError PT.validate(p, t)
